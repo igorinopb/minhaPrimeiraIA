@@ -73,7 +73,7 @@ class RedeNeural{
         this.weights_ih = Matrix.add(this.weights_ih, weights_ih_deltas)
     }
 
-    predict(arr){
+    predict_xor(arr){
         // INPUT -> HIDDEN
         let input = Matrix.arrayToMatrix(arr);
 
@@ -90,4 +90,22 @@ class RedeNeural{
         
         return output;
     }
+
+    // predict_or(arr){
+    //     // INPUT -> HIDDEN
+    //     let input = Matrix.arrayToMatrix(arr);
+
+    //     let hidden = Matrix.multiply(this.weights_ih, input);
+    //     hidden = Matrix.add(hidden, this.bias_ih);
+      
+    //     hidden.map(sigmoid);
+
+    //     // HIDDEN -> OUTPUT
+    //     let output = Matrix.multiply(this.weights_ho, hidden);
+    //     output = Matrix.add(output, this.bias_ho);
+    //     output.map(sigmoid);
+    //     output = Matrix.MatrixToArray(output);
+        
+    //     return output;
+    // }
 }
