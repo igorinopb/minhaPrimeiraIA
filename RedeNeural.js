@@ -23,7 +23,7 @@ class RedeNeural{
         this.weights_ho = new Matrix(this.o_nodes, this.h_nodes);
         this.weights_ho.randomize();
 
-        this.learning_rate = 0.15;
+        this.learning_rate = 0.1;
     }
 
     train(arr, target){

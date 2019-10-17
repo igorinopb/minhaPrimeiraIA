@@ -33,7 +33,7 @@ function draw(){
             var index = floor(random(4));
             nn.train(dataset.inputs[index], dataset.outputs[index]);
         }
-        if(nn.predict([0, 0])[0] < 0.004 && nn.predict([1, 0])[0] > 0.998){
+        if(nn.predict([0, 0])[0] < 0.01 && nn.predict([1, 0])[0] > 0.99 && nn.predict([1, 1])[0] < 0.01 && nn.predict([0, 1])[0] > 0.99){
             train = false;
             console.log("Terminou");
         }
