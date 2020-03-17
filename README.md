@@ -1,1 +1,1 @@
-# minha_primeira_IA
+# minhaPrimeiraIA
